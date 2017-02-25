@@ -1,0 +1,18 @@
+p#notice = notice
+
+p
+  strong Province:
+  = @contact.province
+p
+  strong Old phone:
+  = @contact.old_phone
+p
+  strong New phone:
+  = @contact.new_phone
+p
+  strong Date change:
+  = @contact.date_change
+
+= link_to 'Edit', edit_contact_path(@contact)
+'|
+= link_to 'Back', contacts_path
