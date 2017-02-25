@@ -12,6 +12,10 @@ development:
   <<: *default
   database: change_contact_development
 
+production:
+  <<: *default
+  database: change_contact_production 
+
 test:
   <<: *default
   database: change_contact_test
